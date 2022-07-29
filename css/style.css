@@ -7,6 +7,7 @@
     --white-color: #ffffff;
     --icons-color: #AFB1B8;
     --foter-color: rgba(255, 255, 255, 0.6);
+    --hover-color: #188CE8;
 
     /* background color */
 
@@ -256,7 +257,7 @@ section {
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: #188CE8;
+    background-color: var(--hover-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -445,6 +446,7 @@ section {
 }
 
 .address {
+    width: 231px;
     margin-top: 20px;
     font-style: inherit;
     color: var(--foter-color)
@@ -502,6 +504,52 @@ section {
 
 .footer-icons {    
     fill: currentColor;
+}
+
+.footer-form-box {
+    margin-left: 93px;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-button-form {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);        
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    padding-left: 29px;    
+    letter-spacing: 0.06em;    
+    color: var(--white-color);
+    background-color: var(--accent-color);    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    margin-left: 12px;
+    margin-right: 0;
+    
+}
+
+.footer-form-input {
+    color: var(--white-color);
+    padding-left: 16px;
+    background-color: transparent;    
+    box-sizing: border-box;      
+    width: 358px;
+    height: 50px;       
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.footer-icons-form {
+    margin-left: 10px;
+    fill: var(--white-color);
 }
 
 /* portfolio */
@@ -610,7 +658,7 @@ section {
     font-size: 18px;
     line-height:calc(28 / 18);
     color: var(--white-color);
-    text-align: center;
+    text-align:left;
 
 }
 
@@ -639,7 +687,8 @@ section {
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0);
     width: 528px;
-    height: 581px;
+    min-height: 581px;
+    padding: 40px;
     background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -669,4 +718,94 @@ section {
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.3) rotate(1turn);
+}
+
+.form-title {
+    display: block;
+    width: 448px;
+    padding-bottom: 12px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height:calc(23 / 19);
+    text-align: center;
+    letter-spacing: 0.03em;    
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-use {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;    
+}
+
+.form-use:last-child {
+    margin-bottom: 0;
+}
+
+.form-input.coment {
+padding-left: 16px;
+width: 448px;
+height: 120px;
+resize: none;
+padding: 12px 16px;
+}
+
+.checkbox-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.checkbox-icons {
+    
+}
+
+.form-button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;    
+    color: var(--white-color);
+    transition: background-color var(--animation);
+}
+
+.form-button:hover,
+.form-button:focus {
+    background-color: var(--hover-color);
+    
+}
+
+.form-input {    
+    padding-left: 42px;
+    width: 448px;
+    height: 40px;       
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-icons {
+    position: absolute;
+    left: 12px;
+    bottom: 11px;
+}
+
+.form-label {
+    display: block;
+    text-align: left;
+    margin-bottom: 4px;
 }
