@@ -833,23 +833,21 @@ padding: 12px 16px;
 }
 
 .checkbox:focus + .checkbox-icons .checkbox-icons-ancheck {
-    opacity: 0;
+    fill: var(--accent-color);
 }
 
 .checkbox:checked + .checkbox-icons .checkbox-icons-check {
     opacity: 1;
 }
-.checkbox:focus + .checkbox-icons .checkbox-icons-check {
-    opacity: 1;
-}
+
 
 .checkbox-icons-check {
     opacity: 0;
     transition: opacity var(--animation);
 }
 
-.checkbox-icons-check {
-transition: opacity var(--animation);
+.checkbox-icons-ancheck {
+transition: opacity var(--animation), fill var(--animation);
 }
 
 
